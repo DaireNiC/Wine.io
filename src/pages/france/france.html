@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content class ="france">
+<div #map id="map"></div>
+<!--Native Google Map  -->
+    <ion-grid>
+     <ion-row  style = "display: inline-block;">
+        <ion-col>
+          <div class= "button_list text-content">
+           <div class = "content-title animated flipInX">French Wines</div>
+           <!--Added Css animation to p  -->
+           <p class = "animated rubberBand">France is famed for its variety of popular wine styles,
+              and legendary wine regions that include Bordeaux and Burgundy</p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+    <ion-row >
+        <ion-col>
+          <button (click)= "navigateToFranceRegionsPage()"  class= "button_list_icons button-purple">
+            <div class ="button-text-regions">Regions</div>
+            <img src = "assets/images/france-map-white.png">
+          </button>
+        </ion-col>
+      </ion-row>
+
+     <ion-row>
+        <ion-col><button (click)= "navigateToGrapesPage()"  class= "button_list_icons button-pink">
+           <div class ="button-text-regions">Grapes</div>
+           <img src = "assets/images/bunch-of-grapes.png">
+           </button>
+           </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col><button (click)= "navigateToRedWhitePage()"  class= "button_list_icons button-dark-purple">
+           <div class ="button-text-regions">Styles</div>
+           <img src = "assets/images/barrel.png"
+           ></button>
+           </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+ </ion-content>

@@ -1,0 +1,152 @@
+<!--
+ Bordeaux page
+ Uses Ion-cards to displlay information 
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Bordeaux</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card >
+      <ion-card-header style="font-size: 2em;">
+    Bordeaux
+  </ion-card-header>
+<div #map id="map">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1NLu85_h2bfVRmb4gQSSxOG1IueQ"></iframe>
+</div>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+   Bordeaux (“Bore-doe”) refers to a wine from Bordeaux, France.
+    Over 90% of Bordeaux wines are red wines made with Merlot and Cabernet Sauvignon.
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header class="left">
+    Red Grape Varieties
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left  style = "color:#6E1615" ></ion-icon>
+      Cabernet Sauvignon
+    </button>
+
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left style ="color:#9C1736"></ion-icon>
+      Merlot
+    </button>
+
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left style ="color:#961C31"></ion-icon>
+      Cabernet Flanc
+    </button>
+
+      <button ion-item>
+    <ion-icon name="radio-button-on" item-left style ="color:#631330"></ion-icon>
+    Malbec
+    </button>
+
+    <button ion-item>
+    <ion-icon name="radio-button-on" item-left style ="color:#281318"></ion-icon>
+      Petit Verdot
+    </button>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-card-header class="left">
+    White Grape Varieties
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left  style = "color:#CDC01C" ></ion-icon>
+       Sauvignon Blanc
+    </button>
+
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left style ="color:#D6BD22"></ion-icon>
+      Sémillon
+    </button>
+
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left style ="color:#EDD362"></ion-icon>
+      Muscadelle
+    </button>
+
+  </ion-list>
+</ion-card>
+
+<!--Buying tips-->
+<ion-card>
+  <ion-card-header class="left" >
+    When Buying Vintages go for
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="checkmark-circle-outline" item-left  style = "color:#688E26" ></ion-icon>
+      2010
+    </button>
+
+    <button ion-item>
+      <ion-icon name="checkmark-circle-outline" item-left style ="color:#688E26"></ion-icon>
+      2009
+    </button>
+
+    <button ion-item>
+      <ion-icon name="checkmark-circle-outline" item-left style ="color:#688E26"></ion-icon>
+      2008
+    </button>
+
+     <button ion-item>
+      <ion-icon name="checkmark-circle-outline"item-left style ="color:#688E26"></ion-icon>
+      2003
+    </button>
+     <button ion-item>
+      <ion-icon name="checkmark-circle-outline" item-left style ="color:#688E26"></ion-icon>
+      2000
+    </button>
+
+
+
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-card-header class="left" >
+    When Buying Vintages Avoid
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="close" item-left  style = "color:#A10702" ></ion-icon>
+      2012
+    </button>
+
+    <button ion-item>
+      <ion-icon name="close" item-left  style = "color:#A10702" ></ion-icon>
+      2007
+    </button>
+
+    <button ion-item>
+      <ion-icon name="close" item-left  style = "color:#A10702" ></ion-icon>
+      2002
+    </button>
+
+    <button ion-item>
+      <ion-icon name="close" item-left  style = "color:#A10702" ></ion-icon>
+      1997
+    </button>
+  </ion-list>
+</ion-card>
+
+</ion-content>

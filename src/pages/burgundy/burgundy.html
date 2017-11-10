@@ -1,0 +1,52 @@
+
+<!--
+  Burgundy page
+  Uses Ion-cards to displlay information 
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Burgundy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <ion-card>
+      <ion-card-header style="font-size: 2em; ">
+        Burgundy</ion-card-header>
+        
+<!--Use of iframae to display a custom Google map-->
+<div #map id="map">
+   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gJz-3ge3FNbKa0CjXser0LXwP28" ></iframe>
+   </div>
+   </ion-card>
+
+   <ion-card>
+  <ion-card-content>
+   The French Wine region of Burgundy (aka “Bourgogne”) may be small in size but its influence is huge in the world of vino. <br>The complexity of Burgundy can cast fear into the heart of even a seasoned wine pro,
+    but fear not – the region need only be as complicated as you want it to be. </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header class="left">
+   Grape Varieties
+  </ion-card-header>
+  <ion-card-content>
+    There are really only two grape varieties to remember in Burgundy:
+  </ion-card-content>
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left  style = "color:#6E1615" ></ion-icon>
+     Pinot Noir
+    </button>
+
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left style ="color:#CDC01C"></ion-icon>
+      Chardonnay
+    </button>
+  </ion-list>
+</ion-card>
+
+</ion-content>

@@ -1,0 +1,50 @@
+page-france-regions {
+
+   .card-title-md{
+       text-align: center;
+       font-family: Roboto;
+       font-weight: 500;
+       color: #fff;
+       opacity: 1;
+   }
+
+   .card{
+
+       //background-color: #FAA613;
+      // margin-bottom: 5%;
+       
+   }
+   ion-card{
+       // padding-bottom: 3%;
+        
+   }
+  ion-card {
+    position: relative;
+    text-align: center;
+    //opacity: 0.7;
+  }
+
+  .card-titles {
+    position: absolute;
+    top: 36%;
+    font-size: 3.0em;
+    width: 100%;
+   font-weight: 200;
+    color: #fff;
+    //opacity: 1;
+    // font-family: Roboto;
+  }
+
+  .card-subtitles {
+    font-size: 1.20em;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    color: #fff;
+  }
+  ion-content{
+    background-color: #fff;
+  }
+  
+    background-color: #fff;
+}

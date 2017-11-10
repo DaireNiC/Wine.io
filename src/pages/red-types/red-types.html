@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Red Wines
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="redtypes">
+ 
+    <ion-grid>
+ 
+            <ion-row>
+        <ion-col><button (click)= "navigateToChardonnayPage()" class= "button_list button-pink">Light</button></ion-col>
+      </ion-row>
+ 
+      <ion-row>
+        <ion-col><button  (click)= "navigateToCabernetSauvignonPage()" class= "button_list button-purple" >Medium</button></ion-col>
+      </ion-row>
+
+       <ion-row>
+        <ion-col><button  (click)= "navigateToPinotnoirPage()" class= "button_list button-dark-purple">Full Bodied</button></ion-col>
+      </ion-row>
+ 
+ 
+ 
+    </ion-grid>
+ 
+</ion-content>

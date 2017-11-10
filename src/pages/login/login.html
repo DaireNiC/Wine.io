@@ -1,0 +1,71 @@
+<ion-header>
+   <ion-navbar>
+      <ion-title>
+         Wine.io Profile
+      </ion-title>
+   </ion-navbar>
+</ion-header>
+<ion-content class="login">
+  <!--Only shows login details if  authenticated-->
+   <div padding *ngIf="userProfile">
+<h3 style="color: black;"> Please enter Your Email and Password</h3>
+      <h3>Name: {{ (userProfile | async)?.displayName }}</h3>
+      <h3>URL: {{ (userProfile | async)?.avatar }}</h3>
+      <p></p>
+   </div>
+   <ion-row>
+      <ion-item>
+         <div *ngIf="auth.authState">Welcome {{ auth.currentUser}}! </div>
+
+         <ion-card *ngIf="auth.authState">
+            <img [src]="auth.currentUserphoto"/>
+            <ion-card-content>
+               <ion-card-title>
+                  {{ auth.currentUsername }}
+               </ion-card-title>
+               <p>
+                  Noobie Wine.iooo
+               </p>
+            </ion-card-content>
+         </ion-card>
+      </ion-item>
+   </ion-row>
+  <!--Only shows buttons for log in in if not authenticated-->
+    <div *ngIf="!auth.authState">
+
+   
+    <!--Input and form control for login-->
+   <form [formGroup]="loginForm" (ngSubmit)="submit()" novalidate>
+   <ion-row>
+      <ion-item>
+         <ion-label for="email"></ion-label>
+         <ion-input type="email" value="" placeholder="Email" formControlName="email"></ion-input>
+      </ion-item>
+   </ion-row>
+   <ion-row>
+      <ion-item>
+         <ion-label for="password"></ion-label>
+         <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      </ion-item>
+   </ion-row>
+   </form>
+   <ion-row>
+      <button (click)="login()" ion-button block>Log in</button>
+   </ion-row>
+   <ion-row> 
+      <button [navPush]="signupPage" ion-button block>Sign up</button>
+   </ion-row>
+   <!--new link to sign up page-->
+   <ion-row> 
+      <button [navPush]="resetPasswordPage" ion-button block>Reset password</button>
+   </ion-row>
+   <ion-row> 
+      <button (click)="loginWithFacebook()" ion-button block>Facebook login</button>
+   </ion-row>
+   </div>
+     <!--Only shows buttons for log out if authenticated-->
+      <ion-row *ngIf="auth.authState"> 
+      <button (click)="logout()" ion-button block>Log out</button>
+   </ion-row>
+    
+</ion-content>

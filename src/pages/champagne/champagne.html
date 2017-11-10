@@ -1,0 +1,65 @@
+<!--
+  Generated template for the Champagne page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Champagne</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+   <ion-card>
+      <ion-card-header style="font-size: 2em; ">
+       Champagne
+       </ion-card-header>
+      <div #map id="map"><iframe src="https://www.google.com/maps/d/embed?mid=1clE_bgJebWx16NVDzc1JvFLdoW4"></iframe></div>
+   </ion-card>
+
+   <ion-card>
+  <ion-card-content>
+   Champagne’s production methods, regional differences, and labeling jargon can make it quite intimidating to most of us.
+    The notes below will help you identify the important things to pay attention to when choosing a bottle of Champagne.
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+<ion-card-header class ="left" style="font-size: 1.5em;">
+        <ion-icon name="ios-wine-outline" item-left style ="color:#CDC01C"></ion-icon> Champagne Styles
+       </ion-card-header>
+<ion-list>
+  <ion-item  *ngFor="let d of items; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}"> 
+     <p> {{d.title}}</p>
+      <ion-icon color="success" item-right [name]="isGroupShown(i) ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+    <div style = "padding: 2%;"  class ="animated pulse" *ngIf="isGroupShown(i)">{{d.description}}</div>
+  </ion-item>
+</ion-list>
+</ion-card>
+
+<ion-card>
+   <ion-card-header class="left">
+   Grape Varieties
+  </ion-card-header>
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left  style = "color:#6E1615" ></ion-icon>
+     Pinot Noir
+    </button>
+
+    <button ion-item>
+      <ion-icon name="radio-button-on" item-left style ="color:#CDC01C"></ion-icon>
+      Chardonnay
+    </button>
+
+        <button ion-item>
+      <ion-icon name="radio-button-on" item-left style ="color:#961C31"></ion-icon>
+      Pinot Meunier
+    </button>
+  </ion-list>
+</ion-card>
+
+</ion-content>

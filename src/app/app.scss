@@ -1,0 +1,44 @@
+
+// Custom Styles I share globally throughout the app
+// --------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import "../theme/animate.scss";
+
+//custom styles
+ion-title {
+  text-align: center;
+}
+
+ion-content{
+    font-family: "Pacifico";
+}
+
+    .center{
+        text-align: center;
+
+    }
+  .button-dark-purple{
+      background-color:#688E26; 
+  }
+
+  .button-purple{
+      background-color: #FAA613;
+  }
+
+  .button-pink{
+        background-color: #F44708;
+  }
+  .button-green{
+        background-color: #A10702;
+  }
+  .button-cream{
+        background-color: #E4D5A3;
+  }
+        .button_list{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+        }

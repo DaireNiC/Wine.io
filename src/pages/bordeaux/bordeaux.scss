@@ -1,0 +1,29 @@
+page-bordeaux {
+
+       #map {
+        width: 100%;
+        height: 30%;
+     }
+     ion-card-content{
+        color: black;
+        font-family: Roboto;
+     }
+     ion-card-header{
+         text-align: center;
+         font-weight: 200;
+
+       
+     }
+     .left{
+        text-align: left;
+     }
+    .darktitle{
+         background-color:#5B1547;
+           color: #fff;
+        
+     }
+     ion-list{
+         font-family: Roboto;
+     }
+
+}
