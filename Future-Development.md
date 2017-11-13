@@ -1,0 +1,2 @@
+I plan to add much more content to the application. The app will feature wines from other countries and delve in depth into regions and flavors. I also hope to add more functionality to the user profile, maybe incorporating a learning quiz with user scores. <br><br>
+By September 2017 I plan to release the app to the Google Play store.
