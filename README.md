@@ -5,7 +5,7 @@ Wine.io is an Ionic 2 application designed to make learning about wine both fun 
 ## Getting Started
 
 ```
-git clone https://github.com/danielcregggmit/2nd-year-software-ionic-2-assignment-DaireNiC.wiki.git
+git clone https://github.com/DaireNiC/Wine.io.git
 npm install 
 ionic state restore
 ionic serve --lab
@@ -28,6 +28,5 @@ An apk file is available and runs smoothly on Android devices
 
 ## Author
 *Daire Ni Chatháin
-ID: g00334757
 
 
