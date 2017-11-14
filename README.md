@@ -4,6 +4,7 @@ Wine.io is an Ionic 2 application designed to make learning about wine both fun 
 
 ## Wine.io in Action
 ![](https://media.giphy.com/media/l2QE3A3DGrs7r9MWI/giphy.gif)
+![](https://media.giphy.com/media/l2QE3A3DGrs7r9MWI/giphy.gif)
 
 ## Getting Started
 
